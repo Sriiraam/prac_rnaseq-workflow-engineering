@@ -1,0 +1,10 @@
+#nextflow 
+work/
+.nextflow/
+.nextflow.log
+
+# vs code
+.vscode/
+
+# os 
+.DS_Store
