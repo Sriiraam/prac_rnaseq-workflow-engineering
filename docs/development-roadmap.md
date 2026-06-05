@@ -1,8 +1,22 @@
 # Development Roadmap
 
-Phase 1 - Repository Setup
+## Phase 1
+Repository Setup
+Status: Complete
 
-Phase 2 - FastQC Module
+## Phase 2
+FastQC Module
+Status: In Progress
+
+Deliverables:
+- FastQC module
+- Test dataset
+- Nextflow execution
+- QC report generation
+
+Phase 2
+Status: Complete
+
 
 Phase 3 - Trimming Module
 
