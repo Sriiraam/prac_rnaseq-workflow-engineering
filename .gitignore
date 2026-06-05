@@ -9,4 +9,6 @@ work/
 # os 
 .DS_Store
 
-results/
+results/ 
+
+.nextflow.log
