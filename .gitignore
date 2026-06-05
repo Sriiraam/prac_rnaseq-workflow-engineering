@@ -11,4 +11,4 @@ work/
 
 results/ 
 
-.nextflow.log
+.nextflow.log*
