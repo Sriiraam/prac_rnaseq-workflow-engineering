@@ -20,3 +20,13 @@ Use FastQC as the primary quality control tool.
 Reason:
 Widely adopted RNA-seq quality assessment tool and
 commonly used in production workflows.
+
+## Decision 003
+
+Date: 2026-06-06
+
+Decision:
+Use modular DSL2 architecture.
+
+Reason:
+Supports scalable workflow engineering and module reuse.
