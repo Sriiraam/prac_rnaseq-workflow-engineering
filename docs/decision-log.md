@@ -30,3 +30,15 @@ Use modular DSL2 architecture.
 
 Reason:
 Supports scalable workflow engineering and module reuse.
+
+---
+
+## Decision 004
+
+Date: 2026-06-06
+
+Decision:
+Use STAR aligner for RNA-seq alignment.
+
+Reason:
+Industry-standard splice-aware aligner for transcriptomics workflows.

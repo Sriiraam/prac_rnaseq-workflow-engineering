@@ -1,33 +1,71 @@
 # Development Roadmap
 
 ## Phase 1
+
 Repository Setup
+
 Status: Complete
+
+---
 
 ## Phase 2
+
 FastQC Module
-Status: In Progress
 
-Deliverables:
-- FastQC module
-- Test dataset
-- Nextflow execution
-- QC report generation
-
-Phase 2
 Status: Complete
 
+---
 
-Phase 3 - Trimming Module
+## Phase 3
 
-Phase 4 - Alignment Module
+FASTP Trimming Module
 
-Phase 5 - Counting Module
+Status: Complete
 
-Phase 6 - DESeq2 Module
+---
 
-Phase 7 - Docker Integration
+## Phase 4
 
-Phase 8 - AWS Deployment
+STAR Alignment Module
 
-Phase 9 - CI/CD
+Status: Complete
+
+---
+
+## Phase 5
+
+Counting Module
+
+Status: Pending
+
+---
+
+## Phase 6
+
+DESeq2 Module
+
+Status: Pending
+
+---
+
+## Phase 7
+
+Docker Integration
+
+Status: Pending
+
+---
+
+## Phase 8
+
+AWS Deployment
+
+Status: Pending
+
+---
+
+## Phase 9
+
+CI/CD
+
+Status: Pending
