@@ -1,14 +1,13 @@
-#nextflow 
+# Nextflow
 work/
 .nextflow/
-.nextflow.log
-
-# vs code
-.vscode/
-
-# os 
-.DS_Store
-
-results/ 
-
 .nextflow.log*
+
+# Results
+results/
+
+# STAR index
+data/reference/star_index/
+
+# BAM files
+*.bam
