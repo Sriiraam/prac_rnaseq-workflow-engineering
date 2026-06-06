@@ -4,6 +4,7 @@ include { FASTQC as FASTQC_RAW } from './modules/fastqc'
 include { FASTQC as FASTQC_TRIMMED } from './modules/fastqc'
 include { FASTP } from './modules/fastp'
 include { STAR_ALIGN } from './modules/star_align'
+include { FEATURECOUNTS } from './modules/featurecounts'
 
 workflow {
 
@@ -15,6 +16,7 @@ workflow {
         .set { reads_ch }
 
     genome_index_ch = Channel.value(file("data/reference/star_index"))
+    gtf_ch = Channel.fromPath("data/reference/genes.gtf")
 
     FASTQC_RAW(reads_ch)
 
@@ -23,4 +25,6 @@ workflow {
     FASTQC_TRIMMED(trimmed_ch)
 
     aligned_ch = STAR_ALIGN(trimmed_ch, genome_index_ch)
+
+    FEATURECOUNTS(aligned_ch, gtf_ch)
 }
