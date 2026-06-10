@@ -50,7 +50,7 @@ Status: Complete
 
 Docker Integration
 
-Status: Pending
+Status: completed 
 
 ---
 
