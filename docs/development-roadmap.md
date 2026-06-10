@@ -42,10 +42,8 @@ Status: completed
 
 ## Phase 6
 
-DESeq2 Module
-
-Status: Pending
-
+Phase 6 — DESeq2 Preparation
+Status: Complete
 ---
 
 ## Phase 7
