@@ -1,0 +1,30 @@
+name: RNAseq Workflow CI
+
+on:
+push:
+branches:
+- main
+
+jobs:
+test-workflow:
+runs-on: ubuntu-latest
+
+```
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v4
+
+  - name: Install Java
+    uses: actions/setup-java@v4
+    with:
+      distribution: 'temurin'
+      java-version: '17'
+
+  - name: Install Nextflow
+    run: |
+      curl -s https://get.nextflow.io | bash
+      sudo mv nextflow /usr/local/bin/
+
+  - name: Check Nextflow version
+    run: nextflow -version
+```
