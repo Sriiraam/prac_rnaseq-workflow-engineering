@@ -1,4 +1,6 @@
-# prac_RNA-seq Workflow Engineering
+# RNA-seq Workflow Engineering
+
+![CI](https://github.com/Sriiraam/prac_rnaseq-workflow-engineering/actions/workflows/ci.yml/badge.svg)# prac_RNA-seq Workflow Engineering
 
 ## Objective
 
