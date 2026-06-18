@@ -3,25 +3,25 @@ name: RNA SEQ CI
 on:
   push:
     branches:
-      -main
+      - main
 jobs:
-test-pipeline:
-runs-on: ubuntu-latest
+   test-pipeline:
+     runs-on: ubuntu-latest
 
-steps:
-  -name: checkout repository 
-   uses: actions/checkout@v4
+     steps: 
+       - name: checkout repository 
+         uses: actions/checkout@v4
   
-   -name: setup java 
-    uses: actions/setup-java@v4
-     with:
-      distribution: 'temurin'
-      java-version: '17'
+       - name: setup java 
+         uses: actions/setup-java@v4
+         with:
+           distribution: 'temurin'
+           java-version: '17'
   
-  -name: setup Nextflow
-   uses: nf-core/setup-Nextflow@v2
-    with: 
-      version: latest
+       - name: setup nextflow
+         uses: nf-core/setup-nextflow@v2
+         with: 
+          version: latest
 
-name: Verify Nextflow 
-run: Nextflow -version
+       - name: verify Nextflow 
+         run: nextflow -version
