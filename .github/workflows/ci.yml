@@ -1,28 +1,27 @@
-name: RNAseq CI
+name: RNA SEQ CI
 
 on:
   push:
     branches:
-      - main
-
+      -main
 jobs:
-  test-pipeline:
-    runs-on: ubuntu-latest
+test rna pipeline:
+runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+steps:
+  -name: checkout repository 
+   uses: actions/checkout@v4
+  
+   -name: setup java 
+    uses: actions/setup java@v4
+     with:
+      distribution: 'temurin'
+      java-version: '17'
+  
+  -name: setup Nextflow
+   uses: nf-core/setup-Nextflow@v2
+    with: 
+      version: latest
 
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: 17
-
-      - name: Setup Nextflow
-        uses: nf-core/setup-nextflow@v2
-        with:
-          version: latest
-
-      - name: Check Nextflow version
-        run: nextflow -version
+name: Verify Nextflow 
+run: Nextflow -version
